@@ -21,11 +21,11 @@ image_index = 0;
 image_speed = 0;
 
 
-var save_stage = ds_map_find_value(game_int.save_data,save_data_get_key("stage"));
-var save_dialogue = ds_map_find_value(game_int.save_data,save_data_get_key("dialogue"));
-var save_friend = ds_map_find_value(game_int.save_data,save_data_get_key("friendship"));
- save_endfriend = ds_map_find_value(game_int.save_data,save_data_get_key("endfriend"));
- save_hate = ds_map_find_value(game_int.save_data,save_data_get_key("hate"));
+var save_stage = ds_map_find_value(game_int.save_data,save_data_get_key(obj_shaun,"stage"));
+var save_dialogue = ds_map_find_value(game_int.save_data,save_data_get_key(obj_shaun,"dialogue"));
+var save_friend = ds_map_find_value(game_int.save_data,save_data_get_key(obj_shaun,"friendship"));
+var save_endfriend = ds_map_find_value(game_int.save_data,save_data_get_key(obj_shaun,"endfriend"));
+var save_hate = ds_map_find_value(game_int.save_data,save_data_get_key(obj_shaun,"hate"));
 
 if (!is_undefined(save_stage)){stage = save_stage;}
 if (!is_undefined(save_hate)){hate = save_hate;}

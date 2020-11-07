@@ -51,9 +51,9 @@ if stage == desired_stage and newdialogue == true and endfriend = false and !ins
 		get_newdialogue = true;
 		newdialogue = false;
 		friendship = friendship + 5;
-		ds_map_replace(game_int.save_data,save_data_get_key("stage"),_character.stage);
-		ds_map_replace(game_int.save_data,save_data_get_key("dialogue"),_character.newdialogue);
-		ds_map_replace(game_int.save_data,save_data_get_key("friendship"),_character.friendship);
+		ds_map_replace(game_int.save_data,save_data_get_key(_character,"stage"),_character.stage);
+		ds_map_replace(game_int.save_data,save_data_get_key(_character,"dialogue"),_character.newdialogue);
+		ds_map_replace(game_int.save_data,save_data_get_key(_character,"friendship"),_character.friendship);
 		 talking = true;
 			with (instance_create_depth(xx,yy,-10000,textbox)){character = _character;} 
 	}
@@ -76,7 +76,7 @@ and endfriend = false and newdialogue != true{
  else if clicked_on and global.money >= 10 and !instance_exists(textbox) and endfriend = false and newdialogue != true and _character.hate <=2
  {
 	global.money -= 10;
-	ds_map_replace(game_int.save_data,save_data_get_key("friendship"),_character.friendship);
+	ds_map_replace(game_int.save_data,save_data_get_key(_character,"friendship"),_character.friendship);
 		with (instance_create_depth(xx,yy,-10000,textbox)){
 		character = _character;
 		get_chitchat = true; 
@@ -86,7 +86,7 @@ and endfriend = false and newdialogue != true{
 
 // if you hit end friendship they will only talk mean chitchat now
  else if clicked_on and !instance_exists(textbox) and endfriend = true{
-	ds_map_replace(game_int.save_data,save_data_get_key("endfriend"),_character.endfriend);
+	ds_map_replace(game_int.save_data,save_data_get_key(_character,"endfriend"),_character.endfriend);
 		with (instance_create_depth(xx,yy,-10000,textbox)){
 		character = _character;
 		get_chitchat = true; 
