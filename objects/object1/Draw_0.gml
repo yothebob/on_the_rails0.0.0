@@ -1,0 +1,1 @@
+draw_text(x,300,string(keys));
