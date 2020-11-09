@@ -28,7 +28,7 @@ _dial = stage_array;
 		character.image_index = 0;
 		character.get_newdialogue = false;
 		character.talking = false;
-		//global.breaktime -= 15;
+		global.breaktime -= 15;
 		instance_destroy(textbox);
 		}	
 }

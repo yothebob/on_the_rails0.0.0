@@ -44,7 +44,7 @@ play_stage_dialogue(4,character.stage_4,border,xx);
 		character.friendship = character.friendship + 5;
 		get_chitchat = false;
 		character.talking = false;
-		//global.breaktime -= 15;
+		global.breaktime -= 15;
 		instance_destroy(textbox);
 		}
 }
@@ -65,7 +65,7 @@ else if get_chitchat == true and character.talking != true and character.endfrie
 		character.friendship = character.friendship + 5;
 		get_chitchat = false;
 		character.talking = false;
-		//global.breaktime -= 15;
+		global.breaktime -= 15;
 		instance_destroy(textbox);
 		}
 }
@@ -85,7 +85,7 @@ else if get_chitchat == true and character.talking != true and character.endfrie
 		{
 		get_chitchat = false;
 		character.talking = false;
-		//global.breaktime -= 15;
+		global.breaktime -= 15;
 		instance_destroy(textbox);
 		}
 }
