@@ -26,4 +26,15 @@ global.shaundone = false;
 
 // BF cut scene keys
 global.shaunkey = false;
+
+// inventory
+global.whiterail = 200;
+global.blackrail = 200;
+global.cedarrail = 200;
+global.stainlessrail = 200;
+global.picket = 200;
+global.cable = 200;
+global.glass = 200;
+global.compositedecking = 200;
+global.cedarddecking = 200;
 }

@@ -5,7 +5,7 @@ if global.timeon == true
 
 		if tick == 30
 		{
-		pick = irandom(4);
+		pick = irandom(8);
 		tick = 0;
 		}
 
@@ -13,7 +13,7 @@ if global.timeon == true
 		{
 
 		pick = -1;
-		spawnin = irandom_range(1,3);
+		spawnin = irandom_range(1,2);
 		}
 
 		switch (spawnin)

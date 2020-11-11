@@ -1,6 +1,6 @@
 /// @description time
 
-var sectomin = 60;
+var sectomin = 120;
 var mintohour = 6;
 var daytomonth = 21;
 var monthtoyear = 4;
